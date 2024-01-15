@@ -2,7 +2,7 @@
 #--------------------------------------
 # Image: base
 #--------------------------------------
-FROM ubuntu:focal as base
+FROM ubuntu:jammy as base
 
 RUN touch /.dummy
 

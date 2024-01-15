@@ -1,7 +1,7 @@
 #--------------------------------------
 # Image: base
 #--------------------------------------
-FROM ubuntu:focal as base
+FROM ubuntu:jammy as base
 
 RUN touch /.dummy
 
@@ -105,7 +105,7 @@ RUN set -ex; \
 #--------------------------------------
 # test: gitpod
 #--------------------------------------
-FROM ubuntu:focal as testb-gitpod
+FROM ubuntu:jammy as testb-gitpod
 
 ARG USER_NAME=gitpod
 ARG USER_ID=33333
